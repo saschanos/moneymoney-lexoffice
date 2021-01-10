@@ -1,0 +1,137 @@
+{
+    "content": [
+        {
+            "id": "a8705acd-21eb-45af-b69c-82b54cc32f59",
+            "voucherType": "purchaseinvoice",
+            "voucherStatus": "open",
+            "voucherNumber": "258560",
+            "voucherDate": "2021-01-09T00:00:00.000+01:00",
+            "updatedDate": "2021-01-09T20:12:44.000+01:00",
+            "dueDate": "2021-01-15T00:00:00.000+01:00",
+            "contactName": "Lieferant 1",
+            "totalAmount": 928.20,
+            "currency": "EUR",
+            "archived": false
+        },
+        {
+            "id": "88e4064c-e4e5-4cac-96f6-7aea5efd0cf3",
+            "voucherType": "salesinvoice",
+            "voucherStatus": "open",
+            "voucherNumber": "RE-2021-1001",
+            "voucherDate": "2021-01-08T00:00:00.000+01:00",
+            "updatedDate": "2021-01-08T07:42:30.000+01:00",
+            "dueDate": "2021-01-18T00:00:00.000+01:00",
+            "contactName": "Kunde 2",
+            "totalAmount": 278.46,
+            "currency": "EUR",
+            "archived": false
+        },
+        {
+            "id": "2bb29f25-dad1-4333-9701-0803ec1d1501",
+            "voucherType": "purchaseinvoice",
+            "voucherStatus": "overdue",
+            "voucherNumber": "258562",
+            "voucherDate": "2021-01-03T00:00:00.000+01:00",
+            "updatedDate": "2021-01-03T14:37:08.000+01:00",
+            "dueDate": "2021-01-03T00:00:00.000+01:00",
+            "contactName": "Lieferant 2",
+            "totalAmount": 84.00,
+            "currency": "EUR",
+            "archived": false
+        },
+        {
+            "id": "1105f55f-2b14-49ab-bebc-74e867055e87",
+            "voucherType": "purchaseinvoice",
+            "voucherStatus": "overdue",
+            "voucherNumber": "2584454122",
+            "voucherDate": "2021-01-03T00:00:00.000+01:00",
+            "updatedDate": "2021-01-04T13:00:35.000+01:00",
+            "dueDate": "2021-01-03T00:00:00.000+01:00",
+            "contactName": "Lieferant 3",
+            "totalAmount": 2.29,
+            "currency": "EUR",
+            "archived": false
+        },
+        {
+            "id": "fb2cb971-f558-4d12-ac0a-b2c902d34360",
+            "voucherType": "purchaseinvoice",
+            "voucherStatus": "overdue",
+            "voucherNumber": "7474844A2",
+            "voucherDate": "2021-01-03T00:00:00.000+01:00",
+            "updatedDate": "2021-01-07T01:21:19.000+01:00",
+            "dueDate": "2021-01-03T00:00:00.000+01:00",
+            "contactName": "Lieferant 4",
+            "totalAmount": 458.20,
+            "currency": "EUR",
+            "archived": false
+        },
+        {
+            "id": "f9a24f58-4e2c-45d9-a7a2-4ee3282591d7",
+            "voucherType": "salesinvoice",
+            "voucherStatus": "open",
+            "voucherNumber": "RE-2021-2001",
+            "voucherDate": "2021-01-02T00:00:00.000+01:00",
+            "updatedDate": "2021-01-03T12:54:13.000+01:00",
+            "dueDate": "2021-01-12T00:00:00.000+01:00",
+            "contactName": "Kunde 3",
+            "totalAmount": 31.95,
+            "currency": "EUR",
+            "archived": false
+        },
+        {
+            "id": "7a8acc9c-2d96-4692-a786-549ec8d1b779",
+            "voucherType": "salesinvoice",
+            "voucherStatus": "open",
+            "voucherNumber": "RE-2021-3031",
+            "voucherDate": "2021-01-02T00:00:00.000+01:00",
+            "updatedDate": "2021-01-02T16:24:32.000+01:00",
+            "dueDate": "2021-01-12T00:00:00.000+01:00",
+            "contactName": "Kunde 4",
+            "totalAmount": 556.90,
+            "currency": "EUR",
+            "archived": false
+        },
+        {
+            "id": "f2fa4d0c-944a-4f75-bfa8-608b37ea400e",
+            "voucherType": "salesinvoice",
+            "voucherStatus": "overdue",
+            "voucherNumber": "RE-2021-2022",
+            "voucherDate": "2021-01-01T00:00:00.000+01:00",
+            "updatedDate": "2021-01-02T16:24:09.000+01:00",
+            "dueDate": "2021-01-08T00:00:00.000+01:00",
+            "contactName": "Kunde 5",
+            "totalAmount": 93.19,
+            "currency": "EUR",
+            "archived": false
+        },
+        {
+            "id": "114454b4-551b-4c02-9260-2305d23db9e5",
+            "voucherType": "salesinvoice",
+            "voucherStatus": "open",
+            "voucherNumber": "RE-2020-1020",
+            "voucherDate": "2020-12-31T00:00:00.000+01:00",
+            "updatedDate": "2020-12-31T09:35:46.000+01:00",
+            "dueDate": "2021-01-10T00:00:00.000+01:00",
+            "contactName": "Kunde 6",
+            "totalAmount": 1522.10,
+            "currency": "EUR",
+            "archived": false
+        }
+    ],
+    "first": true,
+    "last": true,
+    "totalPages": 1,
+    "totalElements": 9,
+    "numberOfElements": 9,
+    "size": 25,
+    "number": 0,
+    "sort": [
+        {
+            "property": "voucherdate",
+            "direction": "DESC",
+            "ignoreCase": false,
+            "nullHandling": "NATIVE",
+            "ascending": false
+        }
+    ]
+}
