@@ -57,6 +57,7 @@ function RefreshAccount (account, since)
         transaction.name = row.contactName
         transaction.currency = "EUR"
         transaction.amount = amount
+        transaction.purpose = row.voucherNumber
         transaction.booked = false -- otherwise it would not be possible to remove them
 
         table.insert(transactions, transaction)
