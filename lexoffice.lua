@@ -27,7 +27,8 @@ function ListAccounts (knownAccounts)
 end
 
 function RefreshAccount (account, since)
-    local path = "/v1/voucherlist?voucherType=purchaseinvoice,salesinvoice&voucherStatus=open";
+    -- TODO: lexoffice lists cashwire transaction done by lexoffice as "paid" although they are not booked by the bank (ticket created)
+    local path = "/v1/voucherlist?voucherType=purchaseinvoice,salesinvoice&voucherStatus=open&size=250";
     local postData = {}
     local headers = {}
 
