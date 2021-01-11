@@ -1,12 +1,14 @@
-WebBanking{version     = 1.00,
-           url         = "https://api.lexoffice.io",
-           services    = {"lexoffice"},
-           description = "lexoffice"}
+WebBanking{
+    version = 1.0,
+    url = "https://api.lexoffice.io",
+    description = "lexoffice",
+    services = {"lexoffice Account"}
+}
 
 local apiKey
 
 function SupportsBank (protocol, bankCode)
-  return protocol == ProtocolWebBanking and bankCode == "lexoffice"
+  return protocol == ProtocolWebBanking and bankCode == "lexoffice Account"
 end
 
 function InitializeSession (protocol, bankCode, username, username2, password, username3)
@@ -16,7 +18,7 @@ end
 function ListAccounts (knownAccounts)
   -- Return array of accounts.
   local account = {
-    name = "lexoffice",
+    name = "lexoffice Account",
     owner = "Jane Doe",
     accountNumber = "111222333444",
     bankCode = "80007777",
@@ -54,7 +56,7 @@ function RefreshAccount (account, since)
             amount = row.totalAmount * -1;
         end
 
-        transaction.bookingDate = parse_json_date(row.voucherDate)
+        transaction.bookingDate = parseDate(row.voucherDate)
         transaction.name = row.contactName
         transaction.currency = "EUR"
         transaction.amount = amount
@@ -81,10 +83,10 @@ function httpBuildQuery(params)
 end
 
 -- https://gist.github.com/zwh8800/9b0442efadc97408ffff248bc8573064
-function parse_json_date(json_date)
+function parseDate(date)
     local pattern = "(%d+)%-(%d+)%-(%d+)%a(%d+)%:(%d+)%:([%d%.]+)([Z%+%-])(%d?%d?)%:?(%d?%d?)"
     local year, month, day, hour, minute,
-    seconds, offsetsign, offsethour, offsetmin = json_date:match(pattern)
+    seconds, offsetsign, offsethour, offsetmin = date:match(pattern)
     local timestamp = os.time{year = year, month = month,
                               day = day, hour = hour, min = minute, sec = seconds}
     local offset = 0
