@@ -12,7 +12,7 @@ function SupportsBank (protocol, bankCode)
 end
 
 function InitializeSession (protocol, bankCode, username, username2, password, username3)
-  apiKey = password
+  apiKey = username
 end
 
 function ListAccounts (knownAccounts)
