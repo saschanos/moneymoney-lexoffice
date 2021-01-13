@@ -30,7 +30,7 @@ end
 
 function RefreshAccount (account, since)
     -- TODO: lexoffice lists cashwire transaction done by lexoffice as "paid" although they are not booked by the bank (ticket created)
-    local path = "/v1/voucherlist?voucherType=purchaseinvoice,salesinvoice&voucherStatus=open&size=250";
+    local path = "/v1/voucherlist?voucherType=purchaseinvoice,salesinvoice,sepadebit,transferred&voucherStatus=open&size=250";
     local postData = {}
     local headers = {}
 
